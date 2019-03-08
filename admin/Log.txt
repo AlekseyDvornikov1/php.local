@@ -1,0 +1,12 @@
+Friday 8th of March 05:02:02 PM
+Ошибка с БД: test
+C:\Server\domains\php2.local\App\Db.php
+27
+Friday 8th of March 05:03:01 PM
+Ошибка с БД: test
+C:\Server\domains\php2.local\App\Db.php
+27
+Friday 8th of March 05:03:11 PM
+Ошибка с БД: test
+C:\Server\domains\php2.local\App\Db.php
+27
