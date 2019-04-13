@@ -2,7 +2,6 @@
 
 namespace App\Classes;
 
-
 use App\Singleton;
 
 class Db
@@ -22,8 +21,7 @@ class Db
             $this->dbh = new \PDO('mysql:host=' . $config->data['db']['host'] . ';dbname=' . $config->data['db']['dbname'],
                 $config->data['db']['user'],
                 $config->data['db']['password']);
-        } catch (\PDOException $ex)
-        {
+        } catch (\PDOException $ex) {
             throw new \App\Exceptions\Db("Ошибка с БД: " . $ex->getMessage());
         }
     }
@@ -35,21 +33,19 @@ class Db
      * @return bool
      * @throws \App\Exceptions\Db
      */
-    public function execute($sql,$data = [])
+    public function execute($sql, $data = [])
     {
         try {
             $sth = $this->dbh->prepare($sql);
-        } catch (\PDOException $ex)
-        {
-            throw new \App\Exceptions\Db( "Ошибка с подготовкой запроса: " .$ex->getMessage());
+        } catch (\PDOException $ex) {
+            throw new \App\Exceptions\Db("Ошибка с подготовкой запроса: " . $ex->getMessage());
         }
-        try{
+        try {
             $res = $sth->execute($data);
-        } catch (\PDOException $ex)
-        {
-            throw new \App\Exceptions\Db( "Ошибка с выполнением запроса: " .$ex->getMessage());
+        } catch (\PDOException $ex) {
+            throw new \App\Exceptions\Db("Ошибка с выполнением запроса: " . $ex->getMessage());
         }
-            return $res;
+        return $res;
     }
 
     /**
@@ -59,19 +55,17 @@ class Db
      * @return array
      * @throws \App\Exceptions\Db
      */
-    public function query($sql,$class,$data = [])
+    public function query($sql, $class, $data = [])
     {
         try {
             $sth = $this->dbh->prepare($sql);
-        } catch (\PDOException $ex)
-        {
-            throw new \App\Exceptions\Db( "Ошибка с подготовкой запроса: " .$ex->getMessage());
+        } catch (\PDOException $ex) {
+            throw new \App\Exceptions\Db("Ошибка с подготовкой запроса: " . $ex->getMessage());
         }
-        try{
+        try {
             $res = $sth->execute($data);
-        } catch (\PDOException $ex)
-        {
-            throw new \App\Exceptions\Db( "Ошибка с выполнением запроса: " .$ex->getMessage());
+        } catch (\PDOException $ex) {
+            throw new \App\Exceptions\Db("Ошибка с выполнением запроса: " . $ex->getMessage());
         }
         if (false !== $res) {
             return $sth->fetchAll(\PDO::FETCH_CLASS, $class);

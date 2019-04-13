@@ -12,7 +12,7 @@ class News extends Base
     public function actionHome()
     {
         $this->view->news = \App\Models\News::findLatest();
-        if($this->view->news == null) {
+        if ($this->view->news == null) {
             throw new E404('E404');
         }
         $this->view->display(__DIR__ . '/../templates/index.php');
@@ -25,7 +25,7 @@ class News extends Base
     {
         $id = $this->getUrlParts()[2];
         $this->view->article = \App\Models\News::findById($id);
-        if($this->view->article == null) {
+        if ($this->view->article == null) {
             throw new E404('E404');
         }
         $this->view->display(__DIR__ . '/../templates/article.php');
@@ -37,7 +37,7 @@ class News extends Base
     public function actionAll()
     {
         $this->view->news = \App\Models\News::findAll();
-        if($this->view->news == null) {
+        if ($this->view->news == null) {
             throw new E404('E404');
         }
         $this->view->display(__DIR__ . '/../templates/index.php');

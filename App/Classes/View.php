@@ -2,7 +2,6 @@
 
 namespace App\Classes;
 
-
 use App\TMagic;
 
 class View

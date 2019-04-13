@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Admin Panel"
-AuthUserFile C:/Server/domains/php2.local/admin/.htpasswd
+AuthUserFile C:/Server/domains/php.local/admin/.htpasswd
 Require valid-user

@@ -19,7 +19,6 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <style type="text/css">
     html, body {width:100%;height:100%;margin:0px;padding:0px;font-family:'Open Sans',sans-serif;font-size:16px}
-
 </style>
 <body>
 <nav class="navbar navbar-inverse">
@@ -45,26 +44,26 @@
     <div class="row">
         <?php
         foreach($news as $article) :
-?>
+            ?>
 
-        <div class="col-sm-6">
-            <div class="well">
-                <blockquote class="blockquote-reverse">
-                <h2>
-                    <a href="/news/one/<?php  echo $article->id; ?>"> <?php  echo $article->header;  ?> </a>
-                </h2>
-                <p>
-                    <?php echo mb_substr($article->text,0,100).'...'; ?> <br>
-                    <footer>
-                       Автор: <?php if(isset($article->author)) :
-                                         echo $article->author->name;
-                                     endif;
-                       ?>
-                    </footer>
-                </p>
-                </blockquote>
+            <div class="col-sm-6">
+                <div class="well">
+                    <blockquote class="blockquote-reverse">
+                        <h2>
+                            <a href="/news/one/<?php  echo $article->id; ?>"> <?php  echo $article->header;  ?> </a>
+                        </h2>
+                        <p>
+                            <?php echo mb_substr($article->text,0,100).'...'; ?> <br>
+                            <footer>
+                                Автор: <?php if(isset($article->author)) :
+                                    echo $article->author->name;
+                                endif;
+                                ?>
+                            </footer>
+                        </p>
+                    </blockquote>
+                </div>
             </div>
-        </div>
         <?php  endforeach; ?>
     </div>
 </div>

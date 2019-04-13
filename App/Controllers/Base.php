@@ -1,9 +1,8 @@
 <?php
 
-
 namespace App\Controllers;
-use App\Classes\View;
 
+use App\Classes\View;
 
 class Base
 {
@@ -28,8 +27,8 @@ class Base
     public function getUrlParts()
     {
         $url = parse_url($_SERVER['REQUEST_URI']);
-        $url = mb_substr($url['path'],1);
-        return explode('/',$url);
+        $url = mb_substr($url['path'], 1);
+        return explode('/', $url);
     }
 
 }

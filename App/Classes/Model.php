@@ -16,10 +16,10 @@ abstract class Model
     public static function findAll()
     {
         $db = Db::instance();
-        $res = $db->query(
-            'SELECT * FROM ' . static::TABLE,
-            static::class
-        );
+            $res = $db->query(
+                'SELECT * FROM ' . static::TABLE,
+                static::class
+            );
         return $res;
     }
 
@@ -35,8 +35,7 @@ abstract class Model
             static::class,
             [':id' => $id]
         );
-        if(count($res) === 1)
-        {
+        if (count($res) === 1) {
             return $res[0];
         }
         return null;
@@ -56,13 +55,13 @@ abstract class Model
         $values = [];
 
         foreach ($this as $k => $v) {
-            if( 'id' == $k  || is_null($this->$k)){
+            if ('id' == $k || is_null($this->$k)) {
                 continue;
             }
             $columns[] = $k;
             $values[':' . $k] = $v;
         }
-        $sql = 'INSERT INTO ' . static::TABLE . '(' . implode(',',$columns) . ') VALUES (' . implode(',',array_keys($values)) . ')';
+        $sql = 'INSERT INTO ' . static::TABLE . '(' . implode(',', $columns) . ') VALUES (' . implode(',', array_keys($values)) . ')';
         $db = Db::instance();
         $db->execute($sql, $values);
         $this->id = $db->lastId();
@@ -76,10 +75,10 @@ abstract class Model
         $values = [];
         $places = [];
         foreach ($this as $k => $v) {
-            if( 'id' == $k  || empty($this->$k)){
+            if ('id' == $k || empty($this->$k)) {
                 continue;
             }
-           $values[':' . $k] = $v;
+            $values[':' . $k] = $v;
             $places[] = '`' . $k . '` = :' . $k;
         }
         $values[':id'] = (int)$this->id;
@@ -107,24 +106,23 @@ abstract class Model
     {
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id= :id';
         $db = Db::instance();
-        $db->execute($sql,[':id' => $this->id]);
+        $db->execute($sql, [':id' => $this->id]);
     }
 
     /**
      * @param $data
      * @throws MultiException
      */
-    public  function fill($data)
+    public function fill($data)
     {
         $e = new MultiException();
         foreach ($data as $key => $value) {
             $this->$key = $value;
-            if(empty($this->$key)) {
+            if (empty($this->$key)) {
                 $e[] = new \Exception('Не заполнено обязательно поле');
             }
         }
-        if(!$e->isEmpty())
-        {
+        if (!$e->isEmpty()) {
             throw $e;
         }
 

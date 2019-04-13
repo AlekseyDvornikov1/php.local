@@ -49,7 +49,7 @@ class Admin extends Base
         try {
             $this->news->fill($data);
             $this->news->save();
-        } catch(MultiException $e) {
+        } catch (MultiException $e) {
             $this->view->errors = $e;
         }
     }
