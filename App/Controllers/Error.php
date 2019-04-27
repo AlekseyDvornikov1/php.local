@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Logger;
+use App\Classes\Logger;
 
 class Error extends Base
 {

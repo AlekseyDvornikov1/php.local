@@ -76,8 +76,8 @@ class Db
     /**
      * @return int
      */
-    public function lastId()
-    {
-        return (int)$this->dbh->lastInsertId('id');
-    }
+        public function lastId()
+        {
+            return (int)$this->dbh->lastInsertId('id');
+        }
 }

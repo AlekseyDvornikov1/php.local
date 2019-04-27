@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Classes;
+
+use App\Singleton;
 
 class Logger
 {

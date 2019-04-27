@@ -1,0 +1,132 @@
+Sunday 21st of April 09:09:04 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:09:15 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:09:25 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:09:36 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:09:47 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:09:58 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:10:09 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:10:20 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:10:31 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:10:42 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:10:53 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:11:04 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:11:15 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:11:26 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:11:37 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:11:48 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:11:59 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:12:10 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:12:21 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:12:32 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:12:43 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:12:54 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:13:05 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:13:16 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:13:27 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:13:38 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:13:49 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:14:00 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:14:11 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:14:22 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:14:33 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:14:44 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
+Sunday 21st of April 09:14:55 PM
+Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
+C:\Server\domains\php.local\App\Classes\Db.php
+25
