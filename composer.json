@@ -1,6 +1,7 @@
 {
   "require": {
-    "swiftmailer/swiftmailer": "dev-master"
+    "swiftmailer/swiftmailer": "dev-master",
+    "multiexception/multiexception": "dev-master"
   }
 
 }

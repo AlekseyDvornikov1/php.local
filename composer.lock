@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4bb9e561449171a4f0daaff7ca956b6",
+    "content-hash": "b77dd680bfcaf85d75151f6d44ea0c42",
     "packages": [
         {
             "name": "doctrine/lexer",
@@ -116,6 +116,42 @@
                 "validator"
             ],
             "time": "2018-12-04T22:38:24+00:00"
+        },
+        {
+            "name": "multiexception/multiexception",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlekseyDvornikov1/MultiException.git",
+                "reference": "5a9198eaec398267c1c4a23340f9dbd891b3680f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlekseyDvornikov1/MultiException/zipball/5a9198eaec398267c1c4a23340f9dbd891b3680f",
+                "reference": "5a9198eaec398267c1c4a23340f9dbd891b3680f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksey Dvornikov",
+                    "email": "lesha.dvornikov1@gmail.com"
+                }
+            ],
+            "description": "Test composer",
+            "time": "2019-05-02T10:50:17+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -419,7 +455,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "swiftmailer/swiftmailer": 20
+        "swiftmailer/swiftmailer": 20,
+        "multiexception/multiexception": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
