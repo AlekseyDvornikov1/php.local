@@ -130,3 +130,7 @@ Sunday 21st of April 09:14:55 PM
 Ошибка с БД: SQLSTATE[HY000] [1049] Unknown database 'test'
 C:\Server\domains\php.local\App\Classes\Db.php
 25
+Thursday 2nd of May 12:34:28 PM
+Ошибка с БД: Проверка отправки почты ыхыхых
+C:\Server\domains\php.local\App\Classes\Db.php
+27

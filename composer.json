@@ -1,6 +1,6 @@
 {
   "require": {
-    "psr/log": "dev-master"
+    "swiftmailer/swiftmailer": "dev-master"
   }
 
 }

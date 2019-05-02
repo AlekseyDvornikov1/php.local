@@ -1,9 +1,9 @@
 <?php
-
 require __DIR__ . '/autoload.php';
 
 $base = new \App\Controllers\Base();
 $url_parts = $base->getUrlParts();
+
 $id = $url_parts[2];
 
 if (!empty($url_parts[0])) {

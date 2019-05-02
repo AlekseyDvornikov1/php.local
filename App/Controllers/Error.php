@@ -24,6 +24,7 @@ class Error extends Base
     {
         $log = Logger::instance();
         $log->log($ex);
+        $log->sendMailToAdmin($ex);
         $this->view->error = $ex->getMessage();
         $this->view->display(__DIR__ . '/../templates/Db.php');
     }
