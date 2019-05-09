@@ -73,16 +73,16 @@ abstract class Model
     public function update()
     {
         $values = [];
-        $places = [];
+        $columns = [];
         foreach ($this as $k => $v) {
             if ('id' == $k || empty($this->$k)) {
                 continue;
             }
             $values[':' . $k] = $v;
-            $places[] = '`' . $k . '` = :' . $k;
+            $columns[] = '`' . $k . '` = :' . $k;
         }
         $values[':id'] = (int)$this->id;
-        $sql = 'UPDATE `' . static::TABLE . '` SET ' . implode(', ', $places) . ' WHERE `id` = :id';
+        $sql = 'UPDATE `' . static::TABLE . '` SET ' . implode(', ', $columns) . ' WHERE `id` = :id';
         $db = Db::instance();
         $db->execute($sql, $values);
     }
