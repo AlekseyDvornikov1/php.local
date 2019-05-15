@@ -32,7 +32,7 @@ class News extends Model
     public static function findLatest($limit = 3)
     {
         $db= Db::instance();
-        $res = $db->query(
+        $res = $db->queryEach(
             'SELECT * FROM ' . self::TABLE . ' ORDER BY -id LIMIT '.$limit,
             self::class
         );

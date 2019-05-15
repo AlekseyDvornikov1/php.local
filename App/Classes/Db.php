@@ -73,6 +73,27 @@ class Db
         return [];
     }
 
+    public function queryEach($sql, $class, $data = [])
+    {
+        try {
+            $sth = $this->dbh->prepare($sql,[\PDO::ATTR_CURSOR=>\PDO::CURSOR_SCROLL]);
+        } catch (\PDOException $ex) {
+            throw new \App\Exceptions\Db("Ошибка с подготовкой запроса: " . $ex->getMessage());
+        }
+        try {
+            $res = $sth->execute($data);
+        } catch (\PDOException $ex) {
+            throw new \App\Exceptions\Db("Ошибка с выполнением запроса: " . $ex->getMessage());
+        }
+        if($res) {
+            $sth->setFetchMode(\PDO::FETCH_CLASS,$class);
+            while($row = $sth->fetch()) {
+                yield $row;
+            }
+        }
+        return [];
+    }
+
     /**
      * @return int
      */

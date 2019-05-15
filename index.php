@@ -15,8 +15,12 @@ if (!empty($url_parts[0])) {
 }
 if (!empty($class)) {
     try {
-        $controller = new $class();
-        $controller->action($action);
+        if (class_exists($class) !== false) {
+            $controller = new $class();
+            $controller->action($action);
+        } else {
+            throw new \App\Exceptions\E404('Ошибка 404 - не найдено');
+        }
     } catch (\App\Exceptions\Db $ex) {
         $controllerError = new \App\Controllers\Error();
         $controllerError->actionDb($ex);

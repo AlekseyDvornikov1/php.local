@@ -21,7 +21,12 @@ class Base
     {
         $methodName = 'action' . $action;
         $this->beforeAction();
-        return $this->$methodName();
+        if(method_exists($this,$methodName))
+        {
+            return $this->$methodName();
+        } else {
+            throw new \App\Exceptions\E404('Ошибка 404 - не найдено');
+        }
     }
 
     public function getUrlParts()

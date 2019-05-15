@@ -134,3 +134,59 @@ Thursday 2nd of May 12:34:28 PM
 Ошибка с БД: Проверка отправки почты ыхыхых
 C:\Server\domains\php.local\App\Classes\Db.php
 27
+Tuesday 14th of May 08:38:04 PM
+E404
+C:\Server\domains\php.local\App\Controllers\News.php
+18
+Tuesday 14th of May 08:38:12 PM
+E404
+C:\Server\domains\php.local\App\Controllers\News.php
+18
+Tuesday 14th of May 08:41:13 PM
+E404
+C:\Server\domains\php.local\App\Controllers\News.php
+18
+Wednesday 15th of May 10:29:48 AM
+E404
+C:\Server\domains\php.local\App\Controllers\News.php
+29
+Wednesday 15th of May 10:34:11 AM
+Ошибка 404 - не найдено.
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:34:12 AM
+Ошибка 404 - не найдено.
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:34:15 AM
+Ошибка 404 - не найдено.
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:34:18 AM
+Ошибка 404 - не найдено.
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:37:42 AM
+Ошибка 404 - не найдено
+C:\Server\domains\php.local\App\Controllers\Base.php
+28
+Wednesday 15th of May 10:37:42 AM
+Ошибка 404 - не найдено
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:37:48 AM
+Ошибка 404 - не найдено
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:37:52 AM
+E404
+C:\Server\domains\php.local\App\Controllers\News.php
+29
+Wednesday 15th of May 10:37:52 AM
+Ошибка 404 - не найдено
+C:\Server\domains\php.local\index.php
+22
+Wednesday 15th of May 10:37:57 AM
+Ошибка 404 - не найдено
+C:\Server\domains\php.local\index.php
+22
