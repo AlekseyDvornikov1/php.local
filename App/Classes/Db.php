@@ -73,7 +73,7 @@ class Db
         return [];
     }
 
-    public function queryEach($sql, $class, $data = [])
+    public function queryEach($sql, $class, $data = []): \Generator
     {
         try {
             $sth = $this->dbh->prepare($sql,[\PDO::ATTR_CURSOR=>\PDO::CURSOR_SCROLL]);

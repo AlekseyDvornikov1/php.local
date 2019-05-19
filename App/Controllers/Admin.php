@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Classes\AdminDataTable;
+use App\Models\Author;
 use App\MultiException;
 
 class Admin extends Base
@@ -16,7 +18,31 @@ class Admin extends Base
 
     public function actionAdminPanel()
     {
-        $this->view->number_of_news = \App\Models\News::findAll();
+        $news = \App\Models\News::findAll();
+        $this->view->table1 = (new AdminDataTable($news,
+            function ($news) {
+                return $news->id;
+            },
+            function ($news) {
+                return $news->header;
+            },
+            function ($news) {
+                return $news->text;
+            },
+            function ($news) {
+                return $news->author->name;
+            }))->render();
+
+        $authors = Author::findAll();
+        $this->view->table2 = (new AdminDataTable($authors,
+            function ($author) {
+                return $author->id;
+            },
+            function ($author) {
+                return $author->name;
+            }
+            ))->render();
+
         switch ($_POST['type']) {
             case 'Add':
                 $this->actionEdit(

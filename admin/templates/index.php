@@ -60,8 +60,7 @@ if(!empty($errors)) : ?>
             <strong>Warning!</strong> <?php   echo $error->getMessage(); ?>
         </div>
    <?php endforeach;
-   endif;?>
-
+   endif; ?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-4">
@@ -92,7 +91,6 @@ if(!empty($errors)) : ?>
         <div class="col-sm-4">
             <div class="well">
                 <h2>
-                    Всего: <?php echo count($number_of_news); ?> <br>
                     Редактировать новость:
                 </h2>
                 <form action="" method="post">
@@ -139,6 +137,43 @@ if(!empty($errors)) : ?>
         </div>
     </div>
 </div>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Header</th>
+        <th scope="col">Text</th>
+        <th scope="col">Author</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php
+    foreach ($table1 as $row): ?>
+        <tr>
+            <?php foreach ($row as $column): ?>
+                <td><?=$column;?></td>
+            <?php endforeach;?>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($table2 as $row): ?>
+        <tr>
+            <?php foreach ($row as $column): ?>
+                <td><?=$column;?></td>
+            <?php endforeach;?>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
 <footer id="footer" class="footer navbar-fixed-bottom">
     <div class="footer-copyright text-center py-3">© 2018 Copyright: ДВОРНИКОВ
     </div>

@@ -17,7 +17,11 @@ if (!empty($class)) {
     try {
         if (class_exists($class) !== false) {
             $controller = new $class();
-            $controller->action($action);
+            if(!empty($action)) {
+                $controller->action($action);
+            } else {
+                $controller->action('Home');
+            }
         } else {
             throw new \App\Exceptions\E404('Ошибка 404 - не найдено');
         }

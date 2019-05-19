@@ -16,7 +16,7 @@ abstract class Model
     public static function findAll()
     {
         $db = Db::instance();
-            $res = $db->query(
+            $res = $db->queryEach(
                 'SELECT * FROM ' . static::TABLE,
                 static::class
             );
@@ -83,6 +83,7 @@ abstract class Model
         }
         $values[':id'] = (int)$this->id;
         $sql = 'UPDATE `' . static::TABLE . '` SET ' . implode(', ', $columns) . ' WHERE `id` = :id';
+        var_dump($sql);die;
         $db = Db::instance();
         $db->execute($sql, $values);
     }
